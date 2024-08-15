@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 20px;
+  background-color: rgb(146, 166, 202);
+  color: #eca92d;
+}
+
+.running-wrapper {
+  background-color: #29325a;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.running-details {
+  background-color: #222947;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 3px;
+}
+
+.running-details__distance {
+  color: grey;
+}
+
+.running-level {
+  background-color: #222947;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 3px;
+}
+
+.running-level__title {
+  font-weight: normal;
+}
+
+.running-level__title--easy {
+  color: #19c23d;
+}
+
+.running-level__title--average {
+  color: #ecdf2d;
+}
+
+.running-level__title--hard {
+  color: #e26919;
+}
+
+.running-level__level-area {
+  position: relative;
+  margin: 3px 0;
+  width: 100%;
+  height: 40px;
+  /* background-color: rgb(104, 118, 145);
+  border-radius: 3px; */
+}
+.running-level__level-percentage {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  color: #222947;
+  margin-left: 5px;
+  z-index: 3;
+}
+.running-level__level-bar {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+
+  background-color: rgb(104, 118, 145);
+}
+.running-level__level-actual {
+  position: absolute;
+  height: 40px;
+  width: 50%;
+  border-radius: 3px;
+  background: #eca92d;
+}
+.running-control {
+  display: flex;
+  justify-content: space-around;
+  background-color: #222947;
+  border-radius: 10px;
+  padding: 5px;
+}
+.btn {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px 13px;
+  color: #ecdf2d;
+  border: 1px solid #eca92d;
+  border-radius: 5px;
+  background-color: #222947;
+  box-shadow: 2px 2px 5px #eca92d;
+}
+
+.btn:hover {
+  background-color: #ecdf2d;
+  color: #222947;
+}
